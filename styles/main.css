@@ -1,0 +1,61 @@
+
+
+.hex {
+    position: relative;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background: url('https://beelab.umn.edu/sites/beelab.umn.edu/files/styles/folwell_full/public/2021-05/learn%20about%20honey%20bees%20header.jpg?itok=tXHHAxNX');
+    background-size: cover;
+    background-position: ;
+    
+    background-color: rgb(238, 255, 0);
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 4px 1px 65px -1px rgba(0,0,0,0.67) inset;
+    -webkit-box-shadow: 4px 1px 65px -1px rgba(0,0,0,0.67) inset;
+    -moz-box-shadow: 4px 1px 65px -1px rgba(0,0,0,0.67) inset;
+
+}
+.hex::before {
+    position: absolute;
+    content: "Honey Store";
+    color: #000;
+    top: 63px;
+    left: 66px;
+    font-size: 35px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.41);
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+.hex::after {
+    position: absolute;
+    content: "Since 1991";
+    color: #000;
+    bottom: 58px;
+    left: 86px;
+    font-size: 35px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+.hex:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: none;
+}
+.hex:active {
+    animation: shrinkImage 1s forwards;
+}
+
+@keyframes shrinkImage {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
